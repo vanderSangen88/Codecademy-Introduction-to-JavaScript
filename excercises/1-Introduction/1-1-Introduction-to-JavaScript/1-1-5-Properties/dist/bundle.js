@@ -60,26 +60,23 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 3:
 /***/ (function(module, exports) {
 
 /**
- * 1. Use console.log to log your favorite pizza topping to the console. 
- * Write your topping between the quotation marks ('').
+ * 1. Use the .length property to log the number of characters in the following string to the console "Teaching the world how to code":
  */
 
- console.log('nachos');
+console.log("Teaching the world how to code".length);
 
 
- /**
-  * 2. On the next line log your favorite book or movie to the console.
-  */
 
-  console.log('Captain America - Civil War');
 
 /***/ })
-/******/ ]);
+
+/******/ });

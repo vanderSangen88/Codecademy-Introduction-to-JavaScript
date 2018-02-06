@@ -49,10 +49,39 @@ Let's review: a string is any grouping of words, a number's a number, null is th
 ---
 
 #### 1.1.4. Math Operators
+Don't worry! Math doesn't need to be your strong-suit to learn JavaScript. However, there are operators you'll need to know to make useful programs.
+
+JavaScript supports the following math *operators*:
+1. Add: `+`
+2. Subtract: `-`
+3. Multiply: `*`
+4. Divide: `\`
+
+These all work how you might guess:
+```js
+console.log(3 + 4); // Equals 7
+console.log(5 - 1); // Equals 4
+console.log(4 * 2); // Equals 8
+console.log(9 / 3); // Equals 3
+```
+In the example above, each line uses a different mathematical operator to log a value to the console.
 
 ---
 
 #### 1.1.5. Properties
+
+When you introduce a new piece of data into a JavaScript program, the browser saves it as an instance of the data type. An instance is an individual case (or object) of a data type.
+
+JavaScript will save a new piece of data, like `'Hello'`, as a string instance in the computer's memory. Another example, the number `40.7`, is stored as an instance of the number data type.
+
+An instance, like the string `'Hello'`, has additional information attached to it.
+
+For example, every string instance has a property called `length` that stores the number of characters in it. You can retrieve property information by appending the string with a period and the property name:
+
+```js
+console.log('Hello'.length);
+```
+In the example above, the value saved to the `length` property is retrieved from the string, `'Hello'`. The program prints `5` to the console, because `Hello` has five characters in it.
 
 ---
 
