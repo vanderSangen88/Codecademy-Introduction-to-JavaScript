@@ -1,0 +1,27 @@
+{
+  "name": "Codecademy-Introduction-to-JavaScript",
+  "version": "1.0.0",
+  "description": "JavaScript is a widely used web-based programming language that powers the dynamic behavior on most websites, including this one.",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "webpack-dev-server",
+    "build:prod": "webpack",
+    "test": "npm run build:dev",
+    "production": "npm run build:prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanderSangen88/Codecademy-Introduction-to-JavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanderSangen88/Codecademy-Introduction-to-JavaScript/issues"
+  },
+  "homepage": "https://github.com/vanderSangen88/Codecademy-Introduction-to-JavaScript#readme",
+  "devDependencies": {
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
