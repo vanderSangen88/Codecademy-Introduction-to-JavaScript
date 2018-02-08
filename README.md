@@ -46,6 +46,8 @@ In the example above, the computer logs each of the four primitive data types to
 
 Let's review: a string is any grouping of words, a number's a number, null is the absence of value, and a boolean is a ghostly Halloween costume. Or no, that's false! It's either true or false.
 
+*excersices/1-Introduction/1-1-Introduction-to-JavaScript/1-1-3-Data-Types*.
+
 ---
 
 #### 1.1.4. Math Operators
@@ -66,6 +68,8 @@ console.log(9 / 3); // Equals 3
 ```
 In the example above, each line uses a different mathematical operator to log a value to the console.
 
+*excersices/1-Introduction/1-1-Introduction-to-JavaScript/1-1-4-Math-Operators*.
+
 ---
 
 #### 1.1.5. Properties
@@ -83,9 +87,27 @@ console.log('Hello'.length);
 ```
 In the example above, the value saved to the `length` property is retrieved from the string, `'Hello'`. The program prints `5` to the console, because `Hello` has five characters in it.
 
+*excersices/1-Introduction/1-1-Introduction-to-JavaScript/1-1-5-Properties*.
+
 ---
 
 #### 1.1.6. Build-in Methods
+While the length of a string is calculated when an instance is created, a string instance also has methods that calculate new information as needed. When these built-in methods are called on an instance, they perform actions that generate an output.
+
+Built-in methods are called, or used, by appending an instance with a period, the name of the method, and opening (`(`) and closing (`)`) parentheses. Consider the examples below:
+
+```js
+console.log('Hello'.toUpperCase()); // 'HELLO'
+console.log('Hey'.startsWith('H')); // true
+```
+Let's look at each line separately:
+
+- On the first line, the `.toUpperCase()` method is called on the string instance `'Hello'`. The result is logged to the console. This method returns a string in all capital letters: `'HELLO'`.
+- On the second line, the `.startsWith()` method is called on the string instance `"Hey"`. This method also accepts the character `'H'` as an input between the opening and closing parentheses. Since the string `'Hey'` does start with the letter `'H'`, the method returns the boolean `true`.
+
+You can find a list of built-in string methods in the [JavaScript documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype). Developers use documentation as a reference tool. It describes JavaScript's keywords, methods, and syntax.
+
+*excersices/1-Introduction/1-1-Introduction-to-JavaScript/1-1-6-Built-in-Methods*.
 
 ---
 
