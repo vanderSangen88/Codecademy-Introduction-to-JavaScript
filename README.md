@@ -24,7 +24,7 @@ In this example, ```Hello!``` is logged to the console. Notice, we denote the en
 
 You'll see in the next exercise that you can put any data type inside the parentheses to print it to the console.
 
-*excersices/1-Introduction/1-1-Introduction-to-JavaScript/1-1-2-Console*.
+*[Exercise 1.1.2 Console](http://localhost:8080/exercises/1-Introduction/1-1-Introduction-to-JavaScript/1-1-2-Console/)*.
 
 --- 
 
@@ -46,7 +46,8 @@ In the example above, the computer logs each of the four primitive data types to
 
 Let's review: a string is any grouping of words, a number's a number, null is the absence of value, and a boolean is a ghostly Halloween costume. Or no, that's false! It's either true or false.
 
-*excersices/1-Introduction/1-1-Introduction-to-JavaScript/1-1-3-Data-Types*.
+*exersices/1-Introduction/1-1-Introduction-to-JavaScript/1-1-3-Data-Types*.
+*[Exercise 1.1.3 Data Types](http://localhost:8080/exercises/1-Introduction/1-1-Introduction-to-JavaScript/1-1-3-Data-Types/)*.
 
 ---
 
@@ -68,7 +69,7 @@ console.log(9 / 3); // Equals 3
 ```
 In the example above, each line uses a different mathematical operator to log a value to the console.
 
-*excersices/1-Introduction/1-1-Introduction-to-JavaScript/1-1-4-Math-Operators*.
+*[Exercise 1.1.4 Math Operators](http://localhost:8080/exercises/1-Introduction/1-1-Introduction-to-JavaScript/1-1-4-Math-Operators/)*.
 
 ---
 
@@ -87,7 +88,7 @@ console.log('Hello'.length);
 ```
 In the example above, the value saved to the `length` property is retrieved from the string, `'Hello'`. The program prints `5` to the console, because `Hello` has five characters in it.
 
-*excersices/1-Introduction/1-1-Introduction-to-JavaScript/1-1-5-Properties*.
+*[Exercise 1.1.5 Properties](http://localhost:8080/exercises/1-Introduction/1-1-Introduction-to-JavaScript/1-1-5-Properties/)*.
 
 ---
 
@@ -107,7 +108,7 @@ Let's look at each line separately:
 
 You can find a list of built-in string methods in the [JavaScript documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype). Developers use documentation as a reference tool. It describes JavaScript's keywords, methods, and syntax.
 
-*excersices/1-Introduction/1-1-Introduction-to-JavaScript/1-1-6-Built-in-Methods*.
+*[Exercise 1.1.6 Built-in Methods](http://localhost:8080/exercises/1-Introduction/1-1-Introduction-to-JavaScript/1-1-6-Built-in-Methods/)*.
 
 ---
 
@@ -135,15 +136,43 @@ In this case:
 2. We then multiply that number by `50`, so now we have a number between 0 and 50.
 3. Then, `Math.floor` rounds the number down to the nearest whole number.
 
-*excersices/1-Introduction/1-1-Introduction-to-JavaScript/1-1-7-Libraries*.
+*[Exercise 1.1.7 Libraries](http://localhost:8080/exercises/1-Introduction/1-1-Introduction-to-JavaScript/1-1-7-Libraries/)*.
 
 ---
 
 #### 1.1.8. Comments
+As we write JavaScript, we can create comments in our code.
 
+Programs do not evaluate comments when you run them. In other words, they exist just for human readers. Good comments are useful for you and other developers, because they describe what the code does.
+
+There are two types of code comments in JavaScript:
+1. A single line comment will comment out a single line and is denoted with two forward slashes `//` preceding a line of JavaScript code.
+    ```js
+    // The first 5 decimals of pi
+    console.log('Pi is equal to ' + 3.14159);
+    ```
+2. A multi-line comment will comment out multiple lines and is denoted with /* to begin the comment, and */ to end the comment.
+    ```js
+    /*
+    console.log('All of this code');
+    console.log('Is commented out');
+    console.log('And will not be executed);
+    */
+    ```
 ---
 
+*[Exercise 1.1.8 Comments](http://localhost:8080/exercises/1-Introduction/1-1-Introduction-to-JavaScript/1-1-8-Comments/)*.
+
 #### 1.1.9. Review Types and Operators
+Let's take one more glance at the concepts we just learned:
+
+- Four essential data types in JavaScript include strings, numbers, booleans, and null.
+- Data is printed, or logged, to the console with `console.log()`.
+- Four built-in mathematical operators include `+`, `-`, `*`, and `/`.
+- JavaScript associates certain properties with different data types.
+- JavaScript has built-in methods for different data types.
+- Libraries are collections of methods that can be called without an instance.
+- You can write single-line comments with `//` and multi-line comments between `/*` and `*/`.
 
 ---
 ---
@@ -151,14 +180,73 @@ In this case:
 ### 1.2. Variables
 
 #### 1.2.1. Variables
+Programmers use variables to write code that is easy to understand and repurpose.
+
+Imagine you're writing a weather app. Your thermometer outside reports the temperature in Celsius, but your goal is to record the temperature in Fahrenheit.
+
+You write a program that takes a temperature of `15` degrees Celsius and calculates the temperature in Fahrenheit.
+
+Once you've done this though, you see the temperature now reads `16` degrees Celsius. To find Fahrenheit again, you'd need to write a whole new program to convert `16` degrees Celsius to Fahrenheit.
+
+That's where variables come in. Variables allow us to assign data to a word and use the word to reference the data. If the data changes (like degrees Celsius) we can replace the variable's value instead of re-writing the program.
+
+In this lesson you will learn about two ways to declare variables: `let` and `const`.
+
+*[Exercise 1.2.1 Variables](http://localhost:8080/exercises/1-Introduction/1-2-Variables/1-2-1-Variables)*.
 
 ---
 
 #### 1.2.2. Create a Variable: const
+Let's dive in and see a variable in the wild. Here is how you declare a *constant variable*:
+
+```js
+const myName = 'Arya';
+console.log(myName);
+// Output: Arya
+```
+Let's consider the example above:
+
+1. `const`, short for constant, is a JavaScript *keyword* that creates a new variable with a value that cannot change.
+2. `myName` is the variable's name. Notice that the word has no spaces, and we capitalized the `N`. Capitalizing in this way is a standard convention in JavaScript called *camelCasing*, because the capital letters look like the humps on a camel's back.
+3. `=` is the *assignment operator*. It assigns the value (`'Arya'`) to the variable (`myName`).
+4. `'Arya'` is the *value* assigned (`=`) to the variable `myName`.
+5. 
+After the variable is declared, we can print `'Arya'` to the console with: `console.log(myName)`.
+
+You can save any data type in a variable. For example, here we save numbers:
+```js
+const myAge = 11;
+console.log(myAge);
+// Output: 11
+```
+In the example above, on line 1 the `myAge` variable is set to `11`. Below that, `console.log()` is used to print `11` to the console.
+
+*[Exercise 1.2.2 Create a Variable - const](http://localhost:8080/exercises/1-Introduction/1-2-Variables/1-2-2-Create-a-Variable-const)*.
 
 --- 
 
 #### 1.2.3. Create a Variable: let
+In the final task of the previous exercise you received the following error:
+
+```js
+TypeError: Assignment to constant variable.
+```
+JavaScript threw an error because you assigned a new value to a constant variable. Constant variables, as their name implies, are constant — you cannot assign them a different value.
+
+*Let variables* however, can be reassigned.
+```js
+let meal = 'Enchiladas';
+console.log(meal);
+// output: Enchiladas
+meal = 'Tacos';
+console.log(meal);
+// output: Tacos
+```
+In the example above, the `let` keyword is used to create the `meal` variable with the string `'Enchiladas'` saved to it. On line three, the `meal` variable is changed to store the string `'Tacos'`.
+
+You may be wondering, when to use `const` vs `let`. In general, only use `const` if the value saved to a variable does not change in your program.
+
+*[Exercise 1.2.2 Create a Variable - let](http://localhost:8080/exercises/1-Introduction/1-2-Variables/1-2-3-Create-a-Variable-let)*.
 
 --- 
 
